@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyp751bk2dd7u"]
 
 [ext_resource type="Script" path="res://china.gd" id="1_4y7c7"]
-[ext_resource type="FontFile" uid="uid://cqroosdkvsgjg" path="res://Fonts/CloisterBlack.ttf" id="2_j4sl4"]
+[ext_resource type="FontFile" path="res://Fonts/Mulan.ttf" id="2_e7ohj"]
 
 [node name="China" type="Control"]
 layout_mode = 3
@@ -36,31 +36,31 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
 text = "China"
 
 [node name="Option1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
 text = "A. Gunpowder Powered Dart Gun"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
 text = "B. Cannon"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
 text = "C. Fire Lance"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
 text = "D. Grenade"
 
