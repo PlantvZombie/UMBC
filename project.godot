@@ -11,12 +11,24 @@ config_version=5
 [application]
 
 config/name="Timelapse"
+run/main_scene="res://tote.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
 
 [autoload]
 
 GbScript="*res://GBScript.gd"
+
+[display]
+
+window/size/mode=3
+
+[physics]
+
+common/physics_ticks_per_second=180
+common/max_physics_steps_per_frame=24
+
 
 [rendering]
 
