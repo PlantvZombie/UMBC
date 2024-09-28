@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2kwcvs8t6vi1"]
+
+[gd_scene load_steps=3 format=3 uid="uid://cyp751bk2dd7u"]
+
 
 [ext_resource type="Script" path="res://china.gd" id="1_4y7c7"]
+[ext_resource type="FontFile" uid="uid://cqroosdkvsgjg" path="res://Fonts/CloisterBlack.ttf" id="2_j4sl4"]
 
 [node name="China" type="Control"]
 layout_mode = 3
@@ -30,25 +33,43 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_font_sizes/font_size = 20
 text = "China"
 
 [node name="Option1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_font_sizes/font_size = 20
 text = "A. Gunpowder Powered Dart Gun"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_font_sizes/font_size = 20
 text = "B. Cannon"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_font_sizes/font_size = 20
 text = "C. Fire Lance"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4sl4")
+theme_override_font_sizes/font_size = 20
 text = "D. Grenade"
 
+[connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
