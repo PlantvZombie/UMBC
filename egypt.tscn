@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqltvrm8xlhbm"]
+[gd_scene load_steps=3 format=3 uid="uid://cx0trknvkudpy"]
 
 [ext_resource type="Script" path="res://egypt.gd" id="1_b7lrh"]
 [ext_resource type="Texture2D" uid="uid://bvuk6ivywg1rh" path="res://Sprite/Egypt_Background.png" id="2_tjm62"]
