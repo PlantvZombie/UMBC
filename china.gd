@@ -34,101 +34,13 @@ func buttonPress():
 
 
 func flavorText(pathID):
-	if pathID == 111:
+	if pathID[2] == "1":
 		return " "
-	if pathID == 211:
+	if pathID[2] == "2":
 		return " "
-	if pathID == 311:
+	if pathID[2] == "3":
 		return " "
-	if pathID == 121:
-		return " "
-	if pathID == 221:
-		return " "
-	if pathID == 321:
-		return " "
-	if pathID == 131:
-		return " "
-	if pathID == 231:
-		return " "
-	if pathID == 331:
-		return " "
-	if pathID == 141:
-		return " "
-	if pathID == 241:
-		return " "
-	if pathID == 341:
-		return " "
-	if pathID == 112:
-		return " "
-	if pathID == 212:
-		return " "
-	if pathID == 312:
-		return " "
-	if pathID == 122:
-		return " "
-	if pathID == 222:
-		return " "
-	if pathID == 322:
-		return " "
-	if pathID == 132:
-		return " "
-	if pathID == 232:
-		return " "
-	if pathID == 332:
-		return " "
-	if pathID == 142:
-		return " "
-	if pathID == 242:
-		return " "
-	if pathID == 342:
-		return " "
-	if pathID == 113:
-		return " "
-	if pathID == 213:
-		return " "
-	if pathID == 313:
-		return " "
-	if pathID == 123:
-		return " "
-	if pathID == 223:
-		return " "
-	if pathID == 323:
-		return " "
-	if pathID == 133:
-		return " "
-	if pathID == 233:
-		return " "
-	if pathID == 333:
-		return " "
-	if pathID == 143:
-		return " "
-	if pathID == 243:
-		return " "
-	if pathID == 343:
-		return " "
-	if pathID == 114:
-		return " "
-	if pathID == 214:
-		return " "
-	if pathID == 314:
-		return " "
-	if pathID == 124:
-		return " "
-	if pathID == 224:
-		return " "
-	if pathID == 324:
-		return " "
-	if pathID == 134:
-		return " "
-	if pathID == 234:
-		return " "
-	if pathID == 334:
-		return " "
-	if pathID == 144:
-		return " "
-	if pathID == 244:
-		return " "
-	if pathID == 344:
+	if pathID[2] == "4":
 		return " "
 
 

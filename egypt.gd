@@ -31,11 +31,11 @@ func buttonPress():
 	get_tree().change_scene_to_file("res://greeb.tscn")
 
 func flavorText(pathID):
-	if pathID == "1":
+	if pathID[0] == "1":
 		return " "
-	if pathID == "2":
+	if pathID[0] == "2":
 		return " "
-	if pathID == "3":
+	if pathID[0] == "3":
 		return " "
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 28)
