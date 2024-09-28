@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dak0ulhcri7bw"]
+[gd_scene load_steps=2 format=3 uid="uid://dak0ulhcri7bw"]
+
+[ext_resource type="Script" path="res://greeb.gd" id="1_xj2fi"]
 
 [node name="Greeb" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xj2fi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
@@ -39,3 +42,8 @@ text = "C. "
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "D. "
+
+[connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
