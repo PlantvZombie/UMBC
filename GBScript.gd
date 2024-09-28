@@ -1,3 +1,3 @@
 extends Node
 
-var playerChoices = [null, null, null, null]
+var playerChoices = null
