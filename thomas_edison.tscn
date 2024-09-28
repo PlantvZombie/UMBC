@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://defjbttd0phwx"]
+[gd_scene load_steps=3 format=3 uid="uid://defjbttd0phwx"]
+
+[ext_resource type="Script" path="res://thomas_edison.gd" id="1_0vxwa"]
+[ext_resource type="FontFile" uid="uid://ds2fbqbplg0v2" path="res://Fonts/Rothenburg Decorative.ttf" id="1_vkrbd"]
 
 [node name="Thomas Edison" type="Control"]
 layout_mode = 3
@@ -7,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0vxwa")
 
 [node name="Sprite2D" type="TextureRect" parent="."]
 layout_mode = 0
@@ -27,20 +31,43 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vkrbd")
+theme_override_font_sizes/font_size = 20
 text = "Thomas Edison"
 
 [node name="Option1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vkrbd")
+theme_override_font_sizes/font_size = 20
 text = "A. Edison Coil"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vkrbd")
+theme_override_font_sizes/font_size = 20
 text = "B. Lightbulb"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vkrbd")
+theme_override_font_sizes/font_size = 20
 text = "C. Radiator"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_vkrbd")
+theme_override_font_sizes/font_size = 20
 text = "D. DC Motor"
+
+[connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
