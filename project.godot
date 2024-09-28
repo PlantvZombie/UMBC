@@ -15,7 +15,6 @@ run/main_scene="res://tote.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
-
 [autoload]
 
 GbScript="*res://GBScript.gd"
@@ -28,7 +27,6 @@ window/size/mode=3
 
 common/physics_ticks_per_second=180
 common/max_physics_steps_per_frame=24
-
 
 [rendering]
 

@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://b032pyedfla7d"]
+
+[ext_resource type="Script" path="res://egypt.gd" id="1_b7lrh"]
+[ext_resource type="Texture2D" uid="uid://bvuk6ivywg1rh" path="res://Sprite/Egypt_Background.png" id="2_tjm62"]
+
+[node name="Egypt" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b7lrh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tjm62")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -83.0
+offset_right = 105.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Egypt"
+
+[node name="Option1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "A. Country"
+
+[node name="Option2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "B. State"
+
+[node name="Option3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "C. City "
+
+[node name="Option4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "D. Continent"
+
+[connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
