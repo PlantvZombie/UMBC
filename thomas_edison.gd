@@ -1,6 +1,5 @@
 extends Control
 
-var flavorText
 
 func _ready():
 	$TextureRect.texture = load("res://Sprite/Egypt_Background.png"	)
@@ -30,10 +29,19 @@ func buttonPress():
 	$VBoxContainer/Option2.hide()
 	$VBoxContainer/Option3.hide()
 	$VBoxContainer/Option4.hide()
-	$VBoxContainer/Label.text = flavorText
+	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices)
 	await get_tree().create_timer(3).timeout
 	get_tree().change_scene_to_file("res://greeb.tscn")
 
+func flavorText(pathID):
+	if pathID[3] == "1":
+		return " "
+	if pathID[3] == "2":
+		return " "
+	if pathID[3] == "3":
+		return " "
+	if pathID[3] == "4":
+		return " "
 
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 24)

@@ -35,7 +35,14 @@ func buttonPress():
 	get_tree().change_scene_to_file("res://china.tscn")
 
 func flavorText(pathID):
-	pass
+	if pathID[1] == "1":
+		return " "
+	if pathID[1] == "2":
+		return " "
+	if pathID[1] == "3":
+		return " "
+	if pathID[1] == "4":
+		return " "
 
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 20)
