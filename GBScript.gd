@@ -1,3 +1,3 @@
 extends Node
 
-var playerChoices:int =1
+var playerChoices:String
