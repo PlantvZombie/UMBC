@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://b032pyedfla7d"]
+[gd_scene load_steps=3 format=3 uid="uid://dqltvrm8xlhbm"]
 
 [ext_resource type="Script" path="res://egypt.gd" id="1_b7lrh"]
 [ext_resource type="Texture2D" uid="uid://bvuk6ivywg1rh" path="res://Sprite/Egypt_Background.png" id="2_tjm62"]
@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_b7lrh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,6 +55,8 @@ text = "C. City "
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "D. Continent"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
