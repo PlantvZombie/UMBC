@@ -14,6 +14,10 @@ config/name="Timelapse"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GbScript="*res://GBScript.gd"
+
 [rendering]
 
 renderer/rendering_method="mobile"
