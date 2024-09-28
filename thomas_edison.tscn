@@ -1,15 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyp751bk2dd7u"]
+[gd_scene format=3 uid="uid://defjbttd0phwx"]
 
-[ext_resource type="Script" path="res://china.gd" id="1_4y7c7"]
-
-[node name="China" type="Control"]
+[node name="Thomas Edison" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4y7c7")
 
 [node name="Sprite2D" type="TextureRect" parent="."]
 layout_mode = 0
@@ -30,25 +27,20 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "China"
+text = "Thomas Edison"
 
 [node name="Option1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "A. Gunpowder Powered Dart Gun"
+text = "A. Edison Coil"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "B. Cannon"
+text = "B. Lightbulb"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "C. Fire Lance"
+text = "C. Radiator"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "D. Grenade"
-
-[connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
-[connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
-[connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
+text = "D. DC Motor"
