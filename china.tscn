@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cyp751bk2dd7u"]
+[gd_scene load_steps=4 format=3 uid="uid://cyp751bk2dd7u"]
 
 [ext_resource type="Script" path="res://china.gd" id="1_4y7c7"]
 [ext_resource type="FontFile" path="res://Fonts/Mulan.ttf" id="2_e7ohj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wa1sc"]
 
 [node name="China" type="Control"]
 layout_mode = 3
@@ -44,24 +46,44 @@ text = "China"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wa1sc")
 text = "A. Gunpowder Powered Dart Gun"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wa1sc")
 text = "B. Cannon"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wa1sc")
 text = "C. Fire Lance"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_e7ohj")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wa1sc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wa1sc")
 text = "D. Grenade"
 
 [connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]

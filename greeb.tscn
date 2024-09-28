@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dak0ulhcri7bw"]
+[gd_scene load_steps=4 format=3 uid="uid://dak0ulhcri7bw"]
 
 [ext_resource type="Script" path="res://greeb.gd" id="1_xj2fi"]
 [ext_resource type="FontFile" uid="uid://qkkehuetfbv7" path="res://Fonts/Archeologicaps.ttf" id="2_ajuxa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pjo5g"]
 
 [node name="Greeb" type="Control"]
 layout_mode = 3
@@ -44,24 +46,44 @@ text = "Greeb"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ajuxa")
 theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pjo5g")
 text = "A. Democracy"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ajuxa")
 theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pjo5g")
 text = "B. Meritocracy"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ajuxa")
 theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pjo5g")
 text = "C. Enlightened Absolutism"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ajuxa")
 theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pjo5g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pjo5g")
 text = "D. Noocracy"
 
 [connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
