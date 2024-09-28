@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dak0ulhcri7bw"]
+[gd_scene load_steps=3 format=3 uid="uid://dak0ulhcri7bw"]
 
 [ext_resource type="Script" path="res://greeb.gd" id="1_xj2fi"]
+[ext_resource type="FontFile" uid="uid://qkkehuetfbv7" path="res://Fonts/Archeologicaps.ttf" id="2_ajuxa"]
 
 [node name="Greeb" type="Control"]
 layout_mode = 3
@@ -30,25 +31,43 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajuxa")
+theme_override_font_sizes/font_size = 16
 text = "Greeb"
 
 [node name="Option1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajuxa")
+theme_override_font_sizes/font_size = 16
 text = "A. Democracy"
 
 [node name="Option2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajuxa")
+theme_override_font_sizes/font_size = 16
 text = "B. Meritocracy"
 
 [node name="Option3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajuxa")
+theme_override_font_sizes/font_size = 16
 text = "C. Enlightened Absolutism"
 
 [node name="Option4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ajuxa")
+theme_override_font_sizes/font_size = 16
 text = "D. Noocracy"
 
+[connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option2" to="." method="_on_option_2_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option3" to="." method="_on_option_3_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Option4" to="." method="_on_option_4_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/Option4" to="." method="_on_option_4_pressed"]
