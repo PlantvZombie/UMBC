@@ -1,6 +1,4 @@
-
 [gd_scene load_steps=3 format=3 uid="uid://cyp751bk2dd7u"]
-
 
 [ext_resource type="Script" path="res://china.gd" id="1_4y7c7"]
 [ext_resource type="FontFile" uid="uid://cqroosdkvsgjg" path="res://Fonts/CloisterBlack.ttf" id="2_j4sl4"]
