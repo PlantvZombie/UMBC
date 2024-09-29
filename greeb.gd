@@ -36,13 +36,13 @@ func buttonPress():
 
 func flavorText(pathID):
 	if pathID[1] == "1":
-		return " "
+		return "Cleisthenes, deemed the “Father of Democracy”, created Athenian Democracy, a primitive form of Direct Democracy that would pave the way for future representative democracies."
 	if pathID[1] == "2":
-		return " "
+		return "Cleisthenes, tired of the tyrannus control over Greece, invented Meritocracy in order to ensure that only knowledgeable and meritable people were put into power. He was then executed for treason."
 	if pathID[1] == "3":
-		return " "
+		return "Cleisthenes, worried about the negative effects of control through Tyranny, suggested the idea of Enlightened Absolutism, where the oligarchy could rule while abiding by the ideas of natural law, liberty, and the separation of church and state. His idea was deemed too radical and he was imprisoned for 5 years."
 	if pathID[1] == "4":
-		return " "
+		return "Cleisthenes, hoping for the best for Greece, created Noocracy as a way to make it so that only those deemed wisest were elected so as to have the best decisions possible made. The oligarchy in control of Greece at this time partially adapted this."
 
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 20)

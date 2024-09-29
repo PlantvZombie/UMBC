@@ -32,11 +32,11 @@ func buttonPress():
 
 func flavorText(pathID):
 	if pathID[0] == "1":
-		return " "
+		return "After the unification of upper and lower Egypt in 3150 BCE, Egypt became the first country as it was defined by the area it occupied."
 	if pathID[0] == "2":
-		return " "
+		return "Upper Egypt got conquered by surrounding nations, thus leaving lower Egypt by itself, eventually becoming the state of Egypt."
 	if pathID[0] == "3":
-		return " "
+		return "Menes unified upper and lower Egypt, and then went on to conquer the entirety of Africa, renaming it to the name of his nation, Egypt."
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 28)
 
