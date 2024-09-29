@@ -37,7 +37,7 @@ func buttonPress():
 
 func flavorText(pathID):
 	if pathID[2] == "1":
-		return "Gunpowder Powered Dart Gun: A modified version of the blowgun, where instead of using the power of breath, it is handheld and a small explosion using gunpowder is triggered in order to launch the dart."
+		return "A modified version of the blowgun, where instead of using the power of breath, it is handheld and a small explosion using gunpowder is triggered in order to launch the dart."
 	if pathID[2] == "2":
 		return "As China advanced their quality of gunpowder, their gunpowder eventually had enough power to launch heavy rocks, and they repurposed this into a contained explosion that would launch a heavy iron ball in order to tear down the defenses of their enemies."
 	if pathID[2] == "3":

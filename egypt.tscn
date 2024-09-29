@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqltvrm8xlhbm"]
+[gd_scene load_steps=7 format=3 uid="uid://dqltvrm8xlhbm"]
 
 [ext_resource type="Script" path="res://egypt.gd" id="1_b7lrh"]
 [ext_resource type="Texture2D" uid="uid://bvuk6ivywg1rh" path="res://Sprite/Egypt_Background.png" id="2_tjm62"]
 [ext_resource type="FontFile" uid="uid://b7qx688ryj3bd" path="res://Fonts/MarianaSlabserif-8j5A.ttf" id="3_0k6jk"]
+[ext_resource type="AudioStream" uid="uid://bykt1hiluuqx7" path="res://Music/Lotus.mp3" id="4_t64j2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7iu3"]
 
@@ -80,7 +81,9 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_htbdt")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_htbdt")
 text = "C. Continent"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_t64j2")
+autoplay = true
 
 [connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
 [connection signal="mouse_exited" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_exited"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cf5mx3lrrna7y"]
+[gd_scene load_steps=6 format=3 uid="uid://cf5mx3lrrna7y"]
 
 [ext_resource type="Script" path="res://final_screen.gd" id="1_1adqi"]
 [ext_resource type="FontFile" uid="uid://p22e8j3dkdrc" path="res://Fonts/Dufanthe-lg2OZ.ttf" id="2_pci5n"]
+[ext_resource type="AudioStream" uid="uid://bopgq8at4ujbq" path="res://Music/Goblin_Tinker_Soldier_Spy.mp3" id="3_evdad"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_na65s"]
 
@@ -43,15 +44,19 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_pci5n")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 35
 autowrap_mode = 3
 
 [node name="Reset Game" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_pci5n")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 35
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3eydp")
 text = "play again!!!!!!"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_evdad")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Reset Game" to="." method="_on_reset_game_pressed"]
