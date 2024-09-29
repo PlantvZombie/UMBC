@@ -32,7 +32,7 @@ func buttonPress():
 	$VBoxContainer/Option4.hide()
 	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices)
 	ableSkip = true
-	await get_tree().create_timer(5).timeout
+	await get_tree().create_timer(6).timeout
 	get_tree().change_scene_to_file("res://final_screen.tscn")
 
 func flavorText(pathID):
