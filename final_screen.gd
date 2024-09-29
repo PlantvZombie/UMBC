@@ -3,7 +3,6 @@ extends Control
 
 
 func _ready():
-	get_node("/root/GbScript").playerChoices = "1111"
 	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices) 
 
 func flavorText(pathID):

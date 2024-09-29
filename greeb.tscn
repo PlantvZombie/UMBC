@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dak0ulhcri7bw"]
+[gd_scene load_steps=5 format=3 uid="uid://dak0ulhcri7bw"]
 
 [ext_resource type="Script" path="res://greeb.gd" id="1_xj2fi"]
 [ext_resource type="FontFile" uid="uid://qkkehuetfbv7" path="res://Fonts/Archeologicaps.ttf" id="2_ajuxa"]
+[ext_resource type="AudioStream" uid="uid://b5ouxaapnm2p3" path="res://Music/Wholesome.mp3" id="3_ucon5"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pjo5g"]
 
@@ -86,6 +87,10 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_pjo5g")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_pjo5g")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_pjo5g")
 text = "D. Noocracy"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ucon5")
+autoplay = true
 
 [connection signal="mouse_entered" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_entered"]
 [connection signal="mouse_exited" from="VBoxContainer/Option1" to="." method="_on_option_1_mouse_exited"]
