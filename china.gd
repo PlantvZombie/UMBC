@@ -35,13 +35,13 @@ func buttonPress():
 
 func flavorText(pathID):
 	if pathID[2] == "1":
-		return " "
+		return "Gunpowder Powered Dart Gun: A modified version of the blowgun, where instead of using the power of breath, it is handheld and a small explosion using gunpowder is triggered in order to launch the dart."
 	if pathID[2] == "2":
-		return " "
+		return "As China advanced their quality of gunpowder, their gunpowder eventually had enough power to launch heavy rocks, and they repurposed this into a contained explosion that would launch a heavy iron ball in order to tear down the defenses of their enemies."
 	if pathID[2] == "3":
-		return " "
+		return "Initially in the form of a small pyrotechnic device on the end of polearms, China developed the fire lance into one of the earliest gunpowder weapons, spraying shrapnel a short distance from the end of the polearm."
 	if pathID[2] == "4":
-		return " "
+		return "China’s high quality gunpowder was used in a way that took inspiration from ancient Roman use of Greek Fire, and involved shoving it inside of a condensed space of relatively weak material, lighting a fuse on top before throwing it into enemy lines and showering them with shrapnel."
 
 
 

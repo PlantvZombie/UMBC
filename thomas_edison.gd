@@ -35,13 +35,13 @@ func buttonPress():
 
 func flavorText(pathID):
 	if pathID[3] == "1":
-		return " "
+		return "Edison harnessed the power of electricity into a coil that would arc electricity in all directions, mainly being used to carry wireless telegraphy."
 	if pathID[3] == "2":
-		return " "
+		return "Edison devoted much of his time researching how to create a practical and longer lasting source of light through the use of electricity, and ended up creating a small chamber full of carbon in which he ran electricity through filament to generate light."
 	if pathID[3] == "3":
-		return " "
+		return "Edison was researching ways to utilize electricity, and he ended up running electricity through metal and figuring out that it heated up. He used this to make a commercially available heater."
 	if pathID[3] == "4":
-		return " "
+		return "Edison was researching ways to convert electricity into other forms of energy, and in the process invented a way to convert electricity into mechanical energy through the use of batteries."
 
 func _on_option_1_mouse_entered():
 	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 24)
