@@ -44,14 +44,14 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_pci5n")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 45
 autowrap_mode = 3
 
 [node name="Reset Game" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("2_pci5n")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 45
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3eydp")
 text = "play again!!!!!!"
 
