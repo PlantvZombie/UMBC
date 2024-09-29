@@ -1,8 +1,9 @@
 extends Control
 
+var ableSkip = false
 
 func _ready():
-	$TextureRect.texture = load("res://Sprite/Egypt_Background.png"	)
+	$TextureRect.texture = load("res://Sprite/China_Background.png")
 
 func _on_option_1_pressed():
 	get_node("/root/GbScript").playerChoices += "1"
@@ -29,8 +30,9 @@ func buttonPress():
 	$VBoxContainer/Option3.hide()
 	$VBoxContainer/Option4.hide()
 	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices)
-	await get_tree().create_timer(3).timeout
-	get_tree().change_scene_to_file("res://greeb.tscn")
+	ableSkip = true
+	await get_tree().create_timer(5).timeout
+	get_tree().change_scene_to_file("res://thomas_edison.tscn")
 
 
 func flavorText(pathID):
@@ -75,3 +77,7 @@ func _on_option_4_mouse_entered():
 
 func _on_option_4_mouse_exited():
 	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 24)
+
+func _process(delta):
+	if Input.is_anything_pressed() and ableSkip:
+		get_tree().change_scene_to_file("res://thomas_edison.tscn")

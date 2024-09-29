@@ -1,8 +1,9 @@
 extends Control
 
+var ableSkip = false
 
 func _ready():
-	$TextureRect.texture = load("res://Sprite/Egypt_Background.png"	)
+	$TextureRect.texture = load("res://Sprite/Thomis_Background.png")
 
 func _on_option_1_pressed():
 	get_node("/root/GbScript").playerChoices += "1"
@@ -30,8 +31,9 @@ func buttonPress():
 	$VBoxContainer/Option3.hide()
 	$VBoxContainer/Option4.hide()
 	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices)
-	await get_tree().create_timer(3).timeout
-	get_tree().change_scene_to_file("res://greeb.tscn")
+	ableSkip = true
+	await get_tree().create_timer(5).timeout
+	get_tree().change_scene_to_file("res://final_screen.tscn")
 
 func flavorText(pathID):
 	if pathID[3] == "1":
@@ -44,32 +46,36 @@ func flavorText(pathID):
 		return "Edison was researching ways to convert electricity into other forms of energy, and in the process invented a way to convert electricity into mechanical energy through the use of batteries."
 
 func _on_option_1_mouse_entered():
-	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 24)
+	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 36)
 
 
 func _on_option_1_mouse_exited():
-	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 20)
+	get_node("VBoxContainer/Option1").add_theme_font_size_override("font_size", 28)
 
 
 func _on_option_2_mouse_entered():
-	get_node("VBoxContainer/Option2").add_theme_font_size_override("font_size", 24)
+	get_node("VBoxContainer/Option2").add_theme_font_size_override("font_size", 36)
 
 
 func _on_option_2_mouse_exited():
-	get_node("VBoxContainer/Option2").add_theme_font_size_override("font_size", 20)
+	get_node("VBoxContainer/Option2").add_theme_font_size_override("font_size", 28)
 
 
 func _on_option_3_mouse_entered():
-	get_node("VBoxContainer/Option3").add_theme_font_size_override("font_size", 24)
+	get_node("VBoxContainer/Option3").add_theme_font_size_override("font_size", 36)
 
 
 func _on_option_3_mouse_exited():
-	get_node("VBoxContainer/Option3").add_theme_font_size_override("font_size", 20)
+	get_node("VBoxContainer/Option3").add_theme_font_size_override("font_size", 28)
 
 
 func _on_option_4_mouse_entered():
-	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 24)
+	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 36)
 
 
 func _on_option_4_mouse_exited():
-	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 20)
+	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 28)
+
+func _process(delta):
+	if Input.is_anything_pressed() and ableSkip:
+		get_tree().change_scene_to_file("res://final_screen.tscn")

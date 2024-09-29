@@ -1,9 +1,9 @@
 extends Control
 
-
+var ableSkip = false
 
 func _ready():
-	$TextureRect.texture = load("res://Sprite/Egypt_Background.png"	)
+	$TextureRect.texture = load("res://Sprite/Greece_Background.png")
 	print("12345"[1])
 	
 func _on_option_1_pressed():
@@ -31,12 +31,13 @@ func buttonPress():
 	$VBoxContainer/Option3.hide()
 	$VBoxContainer/Option4.hide()
 	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices)
-	await get_tree().create_timer(3).timeout
+	ableSkip = true
+	await get_tree().create_timer(5).timeout
 	get_tree().change_scene_to_file("res://china.tscn")
 
 func flavorText(pathID):
 	if pathID[1] == "1":
-		return "Cleisthenes, deemed the “Father of Democracy”, created Athenian Democracy, a primitive form of Direct Democracy that would pave the way for future representative democracies."
+		return "Cleisthenes, deemed the “Father of Democracy”, created Athenian Democracy,  a primitive form of Direct Democracy that would pave the way for future representative democracies."
 	if pathID[1] == "2":
 		return "Cleisthenes, tired of the tyrannus control over Greece, invented Meritocracy in order to ensure that only knowledgeable and meritable people were put into power. He was then executed for treason."
 	if pathID[1] == "3":
@@ -73,3 +74,7 @@ func _on_option_4_mouse_entered():
 
 func _on_option_4_mouse_exited():
 	get_node("VBoxContainer/Option4").add_theme_font_size_override("font_size", 16)
+
+func _process(delta):
+	if Input.is_anything_pressed() and ableSkip:
+		get_tree().change_scene_to_file("res://china.tscn")
