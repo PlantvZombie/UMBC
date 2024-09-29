@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b67wp4i6xcpq2"]
+[gd_scene load_steps=5 format=3 uid="uid://cf5mx3lrrna7y"]
 
 [ext_resource type="Script" path="res://final_screen.gd" id="1_1adqi"]
+[ext_resource type="FontFile" uid="uid://p22e8j3dkdrc" path="res://Fonts/Dufanthe-lg2OZ.ttf" id="2_pci5n"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_na65s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3eydp"]
 
 [node name="final_screen" type="Control"]
 layout_mode = 3
@@ -12,23 +17,41 @@ grow_vertical = 2
 script = ExtResource("1_1adqi")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = SubResource("PlaceholderTexture2D_na65s")
 
-[node name="Label" type="Label" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.206
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+anchor_bottom = 0.206
+offset_left = -500.0
+offset_top = 118.512
+offset_right = 500.0
+offset_bottom = 262.512
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pci5n")
+theme_override_font_sizes/font_size = 56
+autowrap_mode = 3
+
+[node name="Reset Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_pci5n")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3eydp")
+text = "play again!!!!!!"
+
+[connection signal="pressed" from="VBoxContainer/Reset Game" to="." method="_on_reset_game_pressed"]

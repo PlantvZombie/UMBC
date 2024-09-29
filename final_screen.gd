@@ -3,7 +3,8 @@ extends Control
 
 
 func _ready():
-	flavorText(flavorText(get_node("/root/GbScript").playerChoices))
+	get_node("/root/GbScript").playerChoices = "1111"
+	$VBoxContainer/Label.text = flavorText(get_node("/root/GbScript").playerChoices) 
 
 func flavorText(pathID):
 	if pathID == "1111":
@@ -390,3 +391,7 @@ func flavorText(pathID):
 		return "The continent of Egypt solidified its power and has stayed prominent throughout time, and with Cleisthenes developing the idea of Noocracy rather than Democracy, oligarchies containing the people who were proclaimed the wisest became much more common in the future. With the creation of the grenade, the natural progression of explosives has been maintained, and with the creation of the radiator being delayed almost two decades, and the lightbulb never having been improved upon by Edison, heating and lighting technology is severely worsened in the modern day."
 	if pathID == "3444":
 		return "The continent of Egypt solidified its power and has stayed prominent throughout time, and with Cleisthenes developing the idea of Noocracy rather than Democracy, oligarchies containing the people who were proclaimed the wisest became much more common in the future. With the creation of the grenade, the natural progression of explosives has been maintained, and with the invention of the DC motor being delayed by 47 years, along with Edison never improving the lightbulb, all motorized creations are of much lower quality and light generation is abysmal."
+
+
+func _on_reset_game_pressed():
+	get_tree().change_scene_to_file("res://tote.tscn")
